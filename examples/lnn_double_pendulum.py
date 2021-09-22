@@ -43,7 +43,6 @@ lnn.save_params('Params_{}.npy'.format(datetimestr))
 #lnn.load_params('Params_20210715_13_26_24.npy')
 
 
-
 simulation_data = lnn.apply_experiment(exp_test, save_state=True)
 simulation_clip = double_pendulum_to_video(simulation_data)
 simulation_clip.write_videofile('simulation_pendulum.mp4')
